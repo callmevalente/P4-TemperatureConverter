@@ -1,0 +1,75 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url("/images/default-background.jpeg");
+    background-size: cover;
+}
+
+#tempBox {
+    margin: 20px 5vw;
+}
+
+#header {
+    background-color: rgba(156, 156, 156, 0.5);
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 1px solid;
+}
+
+h1 {
+    text-align: center;
+}
+.temps {
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+}
+
+#ftoc, #ctof {
+    text-align: center;
+    background-color: rgba(156, 156, 156, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+    width: 40%;
+    border: 1px solid;
+}
+
+#ftoc label , #ctof label {
+    margin-bottom: 15px;
+}
+
+#errorBox {
+    visibility: hidden;
+    text-align: center;
+    margin-top: 35px;
+    background-color: rgba(156, 156, 156, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid;
+    color: red;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+@media (max-width: 590px) {
+    .temps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #ftoc, #ctof {
+        width: 90%;
+    }
+
+    #ftoc {
+        margin-top: 20px;
+    }
+}
